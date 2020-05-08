@@ -1,0 +1,8 @@
+<h2>My books</h2>
+<% @books.each do |book| %>
+  <h1>Title: <%= book.title %></h1>
+  <p>Aythor: <%= book.author %></p>
+  <p>Year: <%= book.year %></p>
+  <p>Rating: <%= book.rating %></p>
+  <p>Description: <%= book.description%></p>
+<% end %>
