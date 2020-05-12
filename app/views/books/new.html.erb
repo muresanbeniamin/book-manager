@@ -1,0 +1,37 @@
+<div style="margin-top: 10px">
+  <h1 class="title is-4">Add a new book</h1>
+
+  <%= form_with(model: @book, local: true) do |form| %>
+    <div class="columns">
+      <div class="field column">
+        <%= form.text_field :title, class: "control input is-danger", placeholder: 'Title' %>
+      </div>
+      <div class="field column">
+        <%= form.text_field :author, class: "control input is-danger", placeholder: 'Author' %>
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column">
+        <%= form.text_area :title, class: "textarea is-danger", placeholder: 'Description', rows: 4 %>
+      </div>
+      <div class="column">
+        <div class="columns">
+          <div class="column is-half">
+            <div class="select is-danger" style="width: 100%">
+              <%= form.select :status, ['Status', 'Want to Read', 'Reading', 'Read'], {}, { style: 'width: 100%' } %>
+            </div>
+          </div>
+          <div class="field column is-half">
+            <%= form.text_field :year, class: "control input is-danger", placeholder: 'Year' %>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="field column">
+          <%= form.text_field :image_url, class: "control input is-danger", placeholder: 'Image URL' %>
+        </div>
+        </div>
+      </div>
+    </div>
+    <%= form.submit 'Save Book', class: 'button is-warning' %>
+  <% end %>
+</div>
