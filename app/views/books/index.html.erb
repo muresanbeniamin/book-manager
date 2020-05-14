@@ -2,7 +2,7 @@
   <div class="column">
     <h1 class="has-text-centered is-size-4">Want to read</h1>
     <% @want_to_read_books.each do |book| %>
-      <div class="card">
+      <div class="card" style="margin-top: 10px">
         <div class="card-image">
           <figure class="image" style="height: 250px; width: 150px; margin-left: auto; margin-right: auto">
             <img src=<%= book.image_url %> alt="Placeholder image">
@@ -27,7 +27,7 @@
   <div class="column">
     <h1 class="has-text-centered is-size-4">Reading</h1>
     <% @reading_books.each do |book| %>
-      <div class="card">
+      <div class="card" style="margin-top: 10px">
         <div class="card-image">
           <figure class="image" style="height: 250px; width: 150px; margin-left: auto; margin-right: auto">
             <img src=<%= book.image_url %> alt="Placeholder image">
@@ -52,7 +52,7 @@
   <div class="column">
     <h1 class="has-text-centered is-size-4">Read</h1>
     <% @read_books.each do |book| %>
-      <div class="card">
+      <div class="card" style="margin-top: 10px">
         <div class="card-image">
           <figure class="image" style="height: 250px; width: 150px; margin-left: auto; margin-right: auto">
             <img src=<%= book.image_url %> alt="Placeholder image">
