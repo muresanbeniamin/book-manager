@@ -12,6 +12,19 @@
   <body>
     <div class="container">
       <section class="hero is-medium is-danger is-bold">
+        <div class="hero-head">
+          <nav class="navbar">
+            <div class="container">
+              <div id="navbarMenuHeroA" class="navbar-menu">
+                <div class="navbar-start">
+                  <span class="navbar-item">
+                    <%= link_to 'Add new book', new_book_path, class: 'button is-danger is-inverted' %>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
         <div class="hero-body">
           <div class="container">
             <h1 class="title is-1">
