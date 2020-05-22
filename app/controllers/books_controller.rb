@@ -5,6 +5,10 @@ class BooksController < ApplicationController
     @reading_books = books.where(status: 'Reading')
     @read_books = books.where(status: 'Read')
   end
+  
+  def show
+    @book = Book.find(params[:id])
+  end
 
   def new 
     @book = Book.new

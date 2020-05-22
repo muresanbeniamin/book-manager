@@ -1,0 +1,10 @@
+<h1 class="is-size-3"><%= @book.title %> - (<%= @book.year %>)</h1>
+<div class="columns">
+  <div class="column">
+    <h1 class="is-size-5"><%= @book.author %> </h1>
+    <h1 class="is-size-6"><%= @book.description %> </h1>
+  </div>
+  <div class="column has-text-centered">
+    <%= image_tag(@book.image_url, style: 'height: 170px;') %>
+  </div>
+</div>
